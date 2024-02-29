@@ -27,7 +27,7 @@ struct OTPTextField: View {
                     }
                 })
                     .keyboardType(.numberPad)
-                    .frame(width: 48, height: 48)
+                    .frame(width: 40, height: 40)
                     .multilineTextAlignment(.center)
                     .focused($fieldFocus, equals: index)
                     .tag(index)

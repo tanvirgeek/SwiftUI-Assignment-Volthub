@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var path: [AuthView] = []
     var body: some View {
-        CreateAccountView()
+        CreateAccountView(path: $path)
     }
 }
 

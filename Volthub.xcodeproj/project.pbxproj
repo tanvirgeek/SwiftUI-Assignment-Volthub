@@ -27,6 +27,10 @@
 		EBB633382B8F589800A604B8 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB633372B8F589800A604B8 /* AppFonts.swift */; };
 		EBB6333A2B8F637500A604B8 /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB633392B8F637500A604B8 /* VerificationView.swift */; };
 		EBB6333E2B8F749000A604B8 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB6333D2B8F749000A604B8 /* OTPTextField.swift */; };
+		EBB633402B9011F100A604B8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB6333F2B9011F100A604B8 /* LoginView.swift */; };
+		EBB633442B901AEC00A604B8 /* SecureInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB633432B901AEC00A604B8 /* SecureInputView.swift */; };
+		EBB633462B901B6E00A604B8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB633452B901B6E00A604B8 /* LoginViewModel.swift */; };
+		EBB633482B90221900A604B8 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB633472B90221900A604B8 /* ForgotPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		EBB633372B8F589800A604B8 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		EBB633392B8F637500A604B8 /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		EBB6333D2B8F749000A604B8 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		EBB6333F2B9011F100A604B8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EBB633432B901AEC00A604B8 /* SecureInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureInputView.swift; sourceTree = "<group>"; };
+		EBB633452B901B6E00A604B8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EBB633472B90221900A604B8 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +181,8 @@
 			children = (
 				EBB633202B8F2BD500A604B8 /* CreateAccountView.swift */,
 				EBB633392B8F637500A604B8 /* VerificationView.swift */,
+				EBB6333F2B9011F100A604B8 /* LoginView.swift */,
+				EBB633472B90221900A604B8 /* ForgotPasswordView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				EBB633222B8F2D1000A604B8 /* CreateAccountViewModel.swift */,
+				EBB633452B901B6E00A604B8 /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -197,6 +208,7 @@
 			children = (
 				EBB633242B8F2E2600A604B8 /* AppButton.swift */,
 				EBB6333D2B8F749000A604B8 /* OTPTextField.swift */,
+				EBB633432B901AEC00A604B8 /* SecureInputView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -365,8 +377,12 @@
 				EBB632F42B8F2A0900A604B8 /* ContentView.swift in Sources */,
 				EBB633382B8F589800A604B8 /* AppFonts.swift in Sources */,
 				EBB633282B8F311B00A604B8 /* AppColors.swift in Sources */,
+				EBB633442B901AEC00A604B8 /* SecureInputView.swift in Sources */,
 				EBB6333A2B8F637500A604B8 /* VerificationView.swift in Sources */,
+				EBB633482B90221900A604B8 /* ForgotPasswordView.swift in Sources */,
+				EBB633462B901B6E00A604B8 /* LoginViewModel.swift in Sources */,
 				EBB632F22B8F2A0900A604B8 /* VolthubApp.swift in Sources */,
+				EBB633402B9011F100A604B8 /* LoginView.swift in Sources */,
 				EBB633252B8F2E2600A604B8 /* AppButton.swift in Sources */,
 				EBB6333E2B8F749000A604B8 /* OTPTextField.swift in Sources */,
 			);

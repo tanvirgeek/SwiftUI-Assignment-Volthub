@@ -9,4 +9,5 @@ import Foundation
 
 class CreateAccountViewModel: ObservableObject {
     @Published var phoneNumber = ""
+    @Published var otp=["", "", "", "", "", ""]
 }

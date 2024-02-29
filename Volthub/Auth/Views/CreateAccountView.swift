@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct CreateAccountView: View {
+    @Binding var path: [AuthView]
     @StateObject private var viewModel = CreateAccountViewModel()
-    @State private var path: [AuthView] = []
     
     var body: some View {
         NavigationStack(path: $path) {
@@ -43,7 +43,7 @@ struct CreateAccountView: View {
             .padding(AppSettings.paddingInPhone)
             .navigationDestination(for: AuthView.self) { route in
                 if route == .verification {
-                    VerificationView(navigationPath: $path)
+                    VerificationView(viewModel: viewModel, navigationPath: $path)
                 }
             }
 
@@ -52,7 +52,7 @@ struct CreateAccountView: View {
     
     private var login: some View {
         NavigationLink {
-            Text("Login")
+            LoginView(navigationPath: $path)
         } label: {
             Text("Have an account? ")
                 .font(AppFonts.font(for: .body2))
@@ -70,5 +70,6 @@ enum AuthView {
 }
 
 #Preview {
-    CreateAccountView()
+    @State var path: [AuthView] = []
+    return CreateAccountView(path: $path)
 }

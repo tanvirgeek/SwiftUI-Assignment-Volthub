@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct VerificationView: View {
-    @Environment(\.dismiss) var dismiss
-    @State private var otp = ["","","","","",""]
+    @StateObject var viewModel: CreateAccountViewModel
     @Binding var navigationPath: [AuthView]
-    
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack(spacing: 16) {
             topBar
@@ -28,7 +27,7 @@ struct VerificationView: View {
                     .font(AppFonts.font(for: .body2))
             }
             
-            OTPTextField(numberOfFields: 6, enteredValue: $otp)
+            OTPTextField(numberOfFields: 6, enteredValue: $viewModel.otp)
             
             AppButton(buttonTitle: "Next") {}
         
@@ -53,6 +52,7 @@ struct VerificationView: View {
                 .font(AppFonts.font(for: .title2))
                 .padding()
                 .onTapGesture {
+                    navigationPath = []
                     dismiss()
                 }
             Spacer()
@@ -62,5 +62,5 @@ struct VerificationView: View {
 
 #Preview {
     @State var path: [AuthView] = []
-    return VerificationView(navigationPath: $path)
+    return VerificationView(viewModel: CreateAccountViewModel(), navigationPath: $path)
 }
